@@ -8,7 +8,7 @@ const EVFooter: React.FC = () => {
     <footer className="ev-footer">
       <div className="ev-footer-background">
         <img 
-          src="/Bo-Kaap..jpg" 
+          src="/bo-kaap.jpg" 
           alt="Bo Kaap Background"
           className="ev-footer-bg-img"
         />

@@ -1,0 +1,40 @@
+/* EVContactImage.css */
+.ev-contact-image {
+  height: 339px;
+  width: 812px;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.ev-contact-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 50%;
+  max-width: none;
+  pointer-events: none;
+  border-radius: 8px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 1200px) {
+  .ev-contact-image {
+    width: 100%;
+    max-width: 600px;
+    height: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .ev-contact-image {
+    max-width: 500px;
+    height: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  .ev-contact-image {
+    max-width: 100%;
+    height: 200px;
+  }
+}

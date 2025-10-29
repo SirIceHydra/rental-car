@@ -1,0 +1,192 @@
+/* EVOverlayCard.css */
+.ev-overlay-card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 500px;
+  width: 100%;
+  max-width: 580px;
+  padding: 24px;
+  justify-content: flex-end;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.ev-overlay-background {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.ev-overlay-bg-img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 50%;
+  max-width: none;
+}
+
+.ev-overlay-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.ev-overlay-content {
+  backdrop-filter: blur(12px);
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: inherit;
+  padding: 30px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  align-items: flex-start;
+  width: 100%;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.ev-overlay-text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.ev-overlay-title {
+  font-family: 'Syne', sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 100%;
+  color: var(--ev-background-white);
+  text-transform: capitalize;
+  margin: 0;
+  width: 100%;
+}
+
+.ev-overlay-description {
+  font-family: 'Syne', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 100%;
+  color: var(--ev-background-light);
+  margin: 0;
+  width: 100%;
+}
+
+.ev-overlay-button {
+  background-color: var(--ev-secondary-color);
+  border: none;
+  border-radius: 4px;
+  padding: 12px 38px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: var(--transition);
+  flex-shrink: 0;
+}
+
+.ev-overlay-button:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
+}
+
+.ev-overlay-button span {
+  font-family: 'Syne', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 100%;
+  color: var(--ev-text-primary);
+  white-space: nowrap;
+}
+
+/* Mobile Responsive */
+@media (max-width: 1200px) {
+  .ev-overlay-card {
+    width: 100%;
+    max-width: 500px;
+    height: 400px;
+  }
+  
+  .ev-overlay-content {
+    width: 100%;
+    padding: 24px 20px;
+    gap: 24px;
+  }
+  
+  .ev-overlay-title {
+    font-size: 32px;
+  }
+  
+  .ev-overlay-description {
+    font-size: 16px;
+  }
+  
+  .ev-overlay-button {
+    padding: 10px 30px;
+  }
+  
+  .ev-overlay-button span {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .ev-overlay-card {
+    max-width: 400px;
+    height: 350px;
+    padding: 20px;
+  }
+  
+  .ev-overlay-content {
+    padding: 20px 16px;
+    gap: 20px;
+  }
+  
+  .ev-overlay-title {
+    font-size: 28px;
+  }
+  
+  .ev-overlay-description {
+    font-size: 16px;
+  }
+  
+  .ev-overlay-button {
+    padding: 10px 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .ev-overlay-card {
+    max-width: 100%;
+    height: 300px;
+    padding: 16px;
+  }
+  
+  .ev-overlay-content {
+    padding: 16px 12px;
+    gap: 16px;
+  }
+  
+  .ev-overlay-title {
+    font-size: 24px;
+  }
+  
+  .ev-overlay-description {
+    font-size: 14px;
+  }
+  
+  .ev-overlay-button {
+    padding: 8px 20px;
+  }
+  
+  .ev-overlay-button span {
+    font-size: 14px;
+  }
+}

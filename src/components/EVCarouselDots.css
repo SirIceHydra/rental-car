@@ -1,0 +1,59 @@
+/* EVCarouselDots.css */
+.ev-carousel-dots {
+  display: flex;
+  gap: 8px;
+  align-items: flex-start;
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  transform: translateX(-50%);
+  margin-top: 20px;
+}
+
+.ev-carousel-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 54px;
+  border: none;
+  cursor: pointer;
+  transition: var(--transition);
+  background-color: var(--ev-text-secondary);
+}
+
+.ev-carousel-dot--active {
+  background-color: var(--ev-text-primary);
+}
+
+.ev-carousel-dot:hover {
+  background-color: var(--ev-text-primary);
+  transform: scale(1.2);
+}
+
+.ev-carousel-dot:focus {
+  outline: 2px solid var(--ev-secondary-color);
+  outline-offset: 2px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .ev-carousel-dots {
+    margin-top: 16px;
+  }
+  
+  .ev-carousel-dot {
+    width: 8px;
+    height: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .ev-carousel-dots {
+    margin-top: 12px;
+    gap: 6px;
+  }
+  
+  .ev-carousel-dot {
+    width: 6px;
+    height: 6px;
+  }
+}

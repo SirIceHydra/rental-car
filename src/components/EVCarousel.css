@@ -1,0 +1,136 @@
+/* EVCarousel.css */
+.ev-carousel {
+  background-color: var(--ev-background-white);
+  padding: 100px 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 79px;
+  align-items: center;
+  width: 100%;
+}
+
+.ev-carousel-container {
+  display: flex;
+  flex-direction: column;
+  gap: 79px;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.ev-carousel-header {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+}
+
+.ev-carousel-tag {
+  background-color: #edf2f6;
+  padding: 10px 20px;
+  border-radius: 4px;
+}
+
+.ev-carousel-tag span {
+  font-family: 'Syne', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 100%;
+  color: var(--ev-text-primary);
+  text-align: center;
+  white-space: nowrap;
+}
+
+.ev-carousel-title {
+  font-family: 'Syne', sans-serif;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 100%;
+  color: var(--ev-text-primary);
+  text-transform: capitalize;
+  text-align: center;
+  margin: 0;
+  white-space: nowrap;
+}
+
+.ev-carousel-content {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  align-items: center;
+  padding: 0 0 20px;
+  width: 100%;
+}
+
+.ev-carousel-images {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 1440px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 1200px) {
+  .ev-carousel {
+    padding: 80px 0 0;
+  }
+  
+  .ev-carousel-container {
+    gap: 60px;
+  }
+  
+  .ev-carousel-title {
+    font-size: 48px;
+  }
+  
+  .ev-carousel-images {
+    flex-direction: column;
+    gap: 20px;
+    max-width: 500px;
+  }
+}
+
+@media (max-width: 768px) {
+  .ev-carousel {
+    padding: 60px 0 0;
+    gap: 50px;
+  }
+  
+  .ev-carousel-container {
+    gap: 50px;
+  }
+  
+  .ev-carousel-content {
+    gap: 24px;
+  }
+  
+  .ev-carousel-title {
+    font-size: 36px;
+    white-space: normal;
+  }
+  
+  .ev-carousel-images {
+    gap: 16px;
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 480px) {
+  .ev-carousel {
+    padding: 40px 0 0;
+  }
+  
+  .ev-carousel-title {
+    font-size: 28px;
+  }
+  
+  .ev-carousel-tag span {
+    font-size: 16px;
+  }
+  
+  .ev-carousel-images {
+    max-width: 300px;
+  }
+}

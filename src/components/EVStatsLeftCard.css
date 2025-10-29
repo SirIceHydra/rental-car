@@ -1,0 +1,138 @@
+/* EVStatsLeftCard.css */
+.ev-stats-left-card {
+  position: relative;
+  overflow: hidden;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 500px;
+  width: 100%;
+}
+
+.ev-stats-left-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.ev-stats-bg-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 50%;
+  max-width: none;
+  pointer-events: none;
+}
+
+.ev-stats-tag {
+  background-color: #000000;
+  padding: 6px 10px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.ev-stats-tag span {
+  font-family: 'Syne', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 100%;
+  color: var(--ev-background-white);
+  white-space: nowrap;
+}
+
+.ev-stats-counter {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: flex-start;
+  color: var(--ev-text-primary);
+  white-space: nowrap;
+}
+
+.ev-stats-numbers {
+  display: flex;
+  gap: 3px;
+  align-items: flex-start;
+  font-family: 'Syne', sans-serif;
+  font-weight: 600;
+  font-size: 80px;
+  line-height: 100%;
+  text-transform: uppercase;
+}
+
+.ev-stats-numbers span {
+  margin: 0;
+}
+
+.ev-stats-description {
+  font-family: 'Syne', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 100%;
+  margin: 0;
+}
+
+/* Mobile Responsive */
+@media (max-width: 1200px) {
+  .ev-stats-left-card {
+    height: 400px;
+    padding: 20px;
+  }
+  
+  .ev-stats-numbers {
+    font-size: 60px;
+  }
+  
+  .ev-stats-description {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .ev-stats-left-card {
+    height: 350px;
+    padding: 20px;
+  }
+  
+  .ev-stats-numbers {
+    font-size: 48px;
+  }
+  
+  .ev-stats-description {
+    font-size: 18px;
+  }
+  
+  .ev-stats-tag span {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .ev-stats-left-card {
+    height: 300px;
+    padding: 16px;
+  }
+  
+  .ev-stats-numbers {
+    font-size: 40px;
+  }
+  
+  .ev-stats-description {
+    font-size: 16px;
+  }
+  
+  .ev-stats-tag span {
+    font-size: 14px;
+  }
+}
+

@@ -1,0 +1,50 @@
+/* EVContact.css */
+.ev-contact {
+  background-color: var(--ev-background-white);
+  padding: 128px 0 128px 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.ev-contact-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 1200px) {
+  .ev-contact {
+    padding: 80px 60px;
+  }
+  
+  .ev-contact-container {
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .ev-contact {
+    padding: 60px 40px;
+  }
+  
+  .ev-contact-container {
+    gap: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .ev-contact {
+    padding: 40px 20px;
+  }
+  
+  .ev-contact-container {
+    gap: 25px;
+  }
+}

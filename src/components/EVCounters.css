@@ -1,0 +1,127 @@
+/* EVCounters.css */
+.ev-counters {
+  border-top: 1px solid var(--ev-background-light);
+  padding-top: 75px;
+  width: 100%;
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+.ev-counters-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.ev-counter {
+  display: flex;
+  gap: 22px;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.ev-counter-numbers {
+  display: flex;
+  align-items: center;
+  font-family: 'Syne', sans-serif;
+  font-weight: 600;
+  font-size: 80px;
+  line-height: 100%;
+  color: var(--ev-text-primary);
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.ev-counter-number {
+  margin: 0;
+  padding: 0;
+}
+
+.ev-counter-unit {
+  margin: 0;
+  padding: 0;
+}
+
+.ev-counter-description {
+  font-family: 'Syne', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 100%;
+  color: var(--ev-text-secondary);
+  margin: 0;
+  padding: 0;
+  width: 160px;
+}
+
+.ev-counter:last-child .ev-counter-description {
+  width: 242px;
+  white-space: pre-wrap;
+}
+
+/* Mobile Responsive */
+@media (max-width: 1200px) {
+  .ev-counters-container {
+    flex-direction: column;
+    gap: 40px;
+    align-items: flex-start;
+  }
+  
+  .ev-counter {
+    width: 100%;
+    justify-content: space-between;
+  }
+  
+  .ev-counter-description {
+    width: auto;
+    flex: 1;
+    text-align: right;
+  }
+  
+  .ev-counter:last-child .ev-counter-description {
+    width: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .ev-counters {
+    padding-top: 50px;
+  }
+  
+  .ev-counters-container {
+    gap: 30px;
+  }
+  
+  .ev-counter-numbers {
+    font-size: 60px;
+  }
+  
+  .ev-counter-description {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .ev-counters-container {
+    gap: 25px;
+  }
+  
+  .ev-counter {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  
+  .ev-counter-description {
+    text-align: left;
+    width: 100%;
+  }
+  
+  .ev-counter-numbers {
+    font-size: 48px;
+  }
+  
+  .ev-counter-description {
+    font-size: 18px;
+  }
+}

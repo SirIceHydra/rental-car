@@ -1,0 +1,157 @@
+/* EVStory.css */
+.ev-story {
+  background-color: var(--ev-background-white);
+  padding: 0 100px 128px;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  align-items: center;
+  width: 100%;
+}
+
+.ev-story-container {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.ev-story-header {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.ev-story-tag {
+  background-color: #edf2f6;
+  padding: 10px 20px;
+  border-radius: 4px;
+}
+
+.ev-story-tag span {
+  font-family: 'Syne', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 100%;
+  color: var(--ev-text-primary);
+  text-align: center;
+  white-space: nowrap;
+}
+
+.ev-story-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.ev-story-heading {
+  flex: 1;
+  min-width: 0;
+}
+
+.ev-story-heading h2 {
+  font-family: 'Syne', sans-serif;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 100%;
+  color: var(--ev-text-primary);
+  text-transform: capitalize;
+  margin: 0;
+}
+
+.ev-story-description {
+  font-family: 'Syne', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 100%;
+  color: var(--ev-text-secondary);
+  width: 344px;
+  flex-shrink: 0;
+  margin: 0;
+}
+
+.ev-story-cards {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+}
+
+/* Mobile Responsive */
+@media (max-width: 1200px) {
+  .ev-story {
+    padding: 0 60px 80px;
+  }
+  
+  .ev-story-content {
+    flex-direction: column;
+    gap: 30px;
+    align-items: flex-start;
+  }
+  
+  .ev-story-heading h2 {
+    font-size: 48px;
+  }
+  
+  .ev-story-description {
+    width: 100%;
+    max-width: 600px;
+  }
+  
+  .ev-story-cards {
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .ev-story {
+    padding: 0 40px 60px;
+    gap: 40px;
+  }
+  
+  .ev-story-container {
+    gap: 40px;
+  }
+  
+  .ev-story-header {
+    gap: 24px;
+  }
+  
+  .ev-story-heading h2 {
+    font-size: 36px;
+  }
+  
+  .ev-story-description {
+    font-size: 16px;
+  }
+  
+  .ev-story-cards {
+    gap: 25px;
+  }
+}
+
+@media (max-width: 480px) {
+  .ev-story {
+    padding: 0 20px 40px;
+  }
+  
+  .ev-story-heading h2 {
+    font-size: 28px;
+  }
+  
+  .ev-story-description {
+    font-size: 14px;
+  }
+  
+  .ev-story-tag span {
+    font-size: 16px;
+  }
+}

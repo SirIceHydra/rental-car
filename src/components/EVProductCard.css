@@ -1,0 +1,141 @@
+/* EVProductCard.css */
+.ev-product-card {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: flex-start;
+  flex: 1;
+  min-width: 0;
+}
+
+.ev-product-image-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.ev-product-image {
+  aspect-ratio: 800 / 964;
+  width: 100%;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.ev-product-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+
+.ev-product-content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: flex-start;
+  width: 370px;
+}
+
+.ev-product-title {
+  font-family: 'Syne', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 100%;
+  color: var(--ev-text-primary);
+  margin: 0;
+  width: 100%;
+}
+
+.ev-product-description {
+  font-family: 'Syne', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 100%;
+  color: var(--ev-text-secondary);
+  margin: 0;
+  width: 100%;
+}
+
+.ev-product-pricing {
+  display: flex;
+  gap: 9px;
+  align-items: center;
+  font-family: 'Syne', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 100%;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.ev-product-original-price {
+  color: var(--ev-text-secondary);
+  text-decoration: line-through;
+}
+
+.ev-product-sale-price {
+  color: var(--ev-text-primary);
+}
+
+/* Mobile Responsive */
+@media (max-width: 1200px) {
+  .ev-product-content {
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .ev-product-title {
+    font-size: 22px;
+  }
+  
+  .ev-product-description {
+    font-size: 16px;
+  }
+  
+  .ev-product-pricing {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 768px) {
+  .ev-product-card {
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .ev-product-image-container {
+    gap: 16px;
+  }
+  
+  .ev-product-content {
+    gap: 12px;
+  }
+  
+  .ev-product-title {
+    font-size: 20px;
+  }
+  
+  .ev-product-description {
+    font-size: 16px;
+  }
+  
+  .ev-product-pricing {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .ev-product-title {
+    font-size: 18px;
+  }
+  
+  .ev-product-description {
+    font-size: 14px;
+  }
+  
+  .ev-product-pricing {
+    font-size: 18px;
+  }
+}

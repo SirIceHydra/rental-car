@@ -1,0 +1,115 @@
+/* EVProducts.css */
+.ev-products {
+  background-color: var(--ev-background-white);
+  padding: 128px 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 45px;
+  align-items: center;
+  width: 100%;
+}
+
+.ev-products-container {
+  display: flex;
+  flex-direction: column;
+  gap: 45px;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.ev-products-header {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+}
+
+.ev-products-tag {
+  background-color: #edf2f6;
+  padding: 10px 20px;
+  border-radius: 4px;
+}
+
+.ev-products-tag span {
+  font-family: 'Syne', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 100%;
+  color: var(--ev-text-primary);
+  text-align: center;
+  white-space: nowrap;
+}
+
+.ev-products-title {
+  font-family: 'Syne', sans-serif;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 100%;
+  color: var(--ev-text-primary);
+  text-transform: capitalize;
+  text-align: center;
+  margin: 0;
+  white-space: nowrap;
+}
+
+.ev-products-grid {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 1150px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 1200px) {
+  .ev-products {
+    padding: 80px 60px;
+  }
+  
+  .ev-products-title {
+    font-size: 48px;
+  }
+  
+  .ev-products-grid {
+    flex-direction: column;
+    gap: 30px;
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 768px) {
+  .ev-products {
+    padding: 60px 40px;
+    gap: 30px;
+  }
+  
+  .ev-products-container {
+    gap: 30px;
+  }
+  
+  .ev-products-title {
+    font-size: 36px;
+    white-space: normal;
+    text-align: center;
+  }
+  
+  .ev-products-grid {
+    gap: 25px;
+  }
+}
+
+@media (max-width: 480px) {
+  .ev-products {
+    padding: 40px 20px;
+  }
+  
+  .ev-products-title {
+    font-size: 28px;
+  }
+  
+  .ev-products-tag span {
+    font-size: 16px;
+  }
+}

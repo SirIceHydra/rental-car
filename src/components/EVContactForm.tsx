@@ -22,7 +22,8 @@ const EVContactForm: React.FC<EVContactFormProps> = ({
 }) => {
   return (
     <div className="ev-contact-form">
-      <h2 className="ev-contact-title">Book Your Luxury Vehicle Today!</h2>
+      <h2 className="ev-contact-title">Book Your Luxury Chauffeur Service</h2>
+      <p className="ev-contact-subtitle">Experience VIP transportation across Cape Town. Select your service tier and duration, and let us handle the rest.</p>
       
       <form className="ev-form" onSubmit={onSubmit}>
         <div className="ev-form-row">
@@ -48,33 +49,34 @@ const EVContactForm: React.FC<EVContactFormProps> = ({
           </div>
         </div>
         
-        <div className="ev-form-field">
-          <label className="ev-form-label">Email Address</label>
-          <input
-            type="email"
-            className="ev-form-input"
-            placeholder="john.doe@email.com"
-            value={formData.email}
-            onChange={(e) => onInputChange('email', e.target.value)}
-          />
+        <div className="ev-form-row">
+          <div className="ev-form-field">
+            <label className="ev-form-label">Email Address</label>
+            <input
+              type="email"
+              className="ev-form-input"
+              placeholder="john.doe@email.com"
+              value={formData.email}
+              onChange={(e) => onInputChange('email', e.target.value)}
+            />
+          </div>
+          <div className="ev-form-field">
+            <label className="ev-form-label">Phone Number</label>
+            <input
+              type="tel"
+              className="ev-form-input"
+              placeholder="+27 XX XXX XXXX"
+              value={formData.phone}
+              onChange={(e) => onInputChange('phone', e.target.value)}
+            />
+          </div>
         </div>
         
         <div className="ev-form-field">
-          <label className="ev-form-label">Phone Number</label>
-          <input
-            type="tel"
-            className="ev-form-input"
-            placeholder="+27 XX XXX XXXX"
-            value={formData.phone}
-            onChange={(e) => onInputChange('phone', e.target.value)}
-          />
-        </div>
-        
-        <div className="ev-form-field">
-          <label className="ev-form-label">Rental Requirements</label>
+          <label className="ev-form-label">Service Details</label>
           <textarea
             className="ev-form-textarea"
-            placeholder="Please specify your rental dates, vehicle preference, and any special requirements..."
+            placeholder="Please specify your preferred service tier (Elite Ride, Concierge Companion, or VIP Celebrity Experience), dates, pickup location, and any special requirements..."
             rows={4}
             value={formData.message}
             onChange={(e) => onInputChange('message', e.target.value)}
@@ -82,7 +84,7 @@ const EVContactForm: React.FC<EVContactFormProps> = ({
         </div>
         
         <button type="submit" className="ev-form-button">
-          Request Quote
+          Book Your Chauffeur
         </button>
       </form>
     </div>

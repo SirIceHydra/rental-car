@@ -10,10 +10,10 @@ const EVStatsLeftCard: React.FC = () => {
         </div>
         <div className="ev-stats-counter">
           <div className="ev-stats-numbers">
-            <span>50</span>
-            <span>+</span>
+            <span>24</span>
+            <span>/7</span>
           </div>
-          <p className="ev-stats-description">Premium Vehicles</p>
+          <p className="ev-stats-description">Available Service</p>
         </div>
       </div>
       <img 

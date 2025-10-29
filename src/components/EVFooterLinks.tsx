@@ -16,17 +16,17 @@ const footerColumns: FooterColumn[] = [
     title: 'Quick Links',
     links: [
       { text: 'About Us', href: '#about' },
-      { text: 'Our Fleet', href: '#fleet' },
-      { text: 'Services', href: '#services' },
+      { text: 'Service Tiers', href: '#services' },
+      { text: 'Where We Operate', href: '#locations' },
       { text: 'Contact Us', href: '#contact' }
     ]
   },
   {
     title: 'Contact Info',
     links: [
-      { text: 'Phone: +27 11 XXX XXXX', href: 'tel:+2711XXXXXXX' },
+      { text: 'Phone: +27 21 XXX XXXX', href: 'tel:+2721XXXXXXX' },
       { text: 'Email: info@elitedrive.co.za', href: 'mailto:info@elitedrive.co.za' },
-      { text: 'Address: Sandton, Johannesburg', href: '#contact' }
+      { text: 'Location: Cape Town, South Africa', href: '#contact' }
     ]
   },
   {
@@ -34,7 +34,7 @@ const footerColumns: FooterColumn[] = [
     links: [
       { text: 'Terms & Conditions', href: '#terms' },
       { text: 'Privacy Policy', href: '#privacy' },
-      { text: 'Rental Agreement', href: '#rental' }
+      { text: 'Service Agreement', href: '#service' }
     ]
   }
 ]

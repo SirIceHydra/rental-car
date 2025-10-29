@@ -13,7 +13,7 @@ const EVBrandLogoCard: React.FC = () => {
       </div>
       <div className="ev-brand-logo-text">
         <span className="ev-brand-logo-text-main">EliteDrive</span>
-        <span className="ev-brand-logo-text-tagline">Premium Rentals</span>
+        <span className="ev-brand-logo-text-tagline">Premium Chauffeur</span>
       </div>
     </div>
   )

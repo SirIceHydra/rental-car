@@ -18,7 +18,7 @@ const EVTestimonialCard: React.FC = () => {
             />
           </div>
         </div>
-        <p className="ev-testimonial-subtitle">Satisfied Customers Worldwide</p>
+        <p className="ev-testimonial-subtitle">VIP Clients in Cape Town</p>
       </div>
       
       <div className="ev-testimonial-footer">
@@ -29,11 +29,11 @@ const EVTestimonialCard: React.FC = () => {
               alt="Number"
               className="ev-testimonial-number-img"
             />
-            <span>3,000+ Delighted Renters</span>
+            <span>500+ VIP Clients Served</span>
           </div>
         </div>
         <div className="ev-testimonial-price">
-          <span>R 50k+</span>
+          <span>5-Star Rated</span>
         </div>
       </div>
     </div>

@@ -52,10 +52,36 @@
   font-family: 'Syne', sans-serif;
   font-weight: 400;
   font-size: 18px;
-  line-height: 100%;
+  line-height: 1.5;
   color: var(--ev-text-secondary);
   margin: 0;
   width: 100%;
+}
+
+.ev-product-features {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: flex-start;
+  width: 100%;
+  margin-top: 8px;
+}
+
+.ev-product-feature {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: 'Syne', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.4;
+  color: var(--ev-text-secondary);
+}
+
+.ev-product-feature-icon {
+  color: var(--ev-text-primary);
+  font-weight: 600;
+  font-size: 18px;
 }
 
 .ev-product-pricing {

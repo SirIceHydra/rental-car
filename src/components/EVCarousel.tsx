@@ -1,49 +1,66 @@
-import React, { useState } from 'react'
+import React from 'react'
 import EVCarouselImage from './EVCarouselImage'
 import EVCarouselDots from './EVCarouselDots'
 import './EVCarousel.css'
 
-interface CarouselImage {
+interface Amenity {
   id: number
-  src: string
-  alt: string
+  name: string
+  icon?: string
 }
 
-const carouselImages: CarouselImage[] = [
+const amenities: Amenity[] = [
+  { id: 1, name: 'TV Screens + Entertainment' },
+  { id: 2, name: 'Snacks and Beverages' },
+  { id: 3, name: 'High-Speed WiFi' },
+  { id: 4, name: 'Tinted Privacy Glass' },
+  { id: 5, name: 'Climate-Controlled Comfort' }
+]
+
+const carouselImages = [
   {
     id: 1,
-    src: '/fcc714bb60c3fa48408d51524472d118e4950434.png',
-    alt: 'EV Car Interior 1'
+    src: '/comfort/comfort.webp',
+    alt: 'Luxury Kombi Interior Comfort'
   },
   {
     id: 2,
-    src: '/01b1cb2d9a0d7c6b8dc35ddbf15a2272ee7cbca3.png',
-    alt: 'EV Car Interior 2'
+    src: '/comfort/luxurycomfort.webp',
+    alt: 'Premium Chauffeur Vehicle Interior'
   },
   {
     id: 3,
-    src: '/bcae4889dd6b37351a23fdf18c77b74782dedf13.png',
-    alt: 'EV Car Interior 3'
+    src: '/comfort/tvscreen.avif',
+    alt: 'TV Screens and Entertainment Onboard'
   }
 ]
 
 const EVCarousel: React.FC = () => {
-  const [activeIndex, setActiveIndex] = useState(0)
+  const [activeIndex, setActiveIndex] = React.useState(0)
 
   const handleDotClick = (index: number) => {
     setActiveIndex(index)
   }
 
   return (
-    <section className="ev-carousel">
+    <section className="ev-carousel" id="amenities">
       <div className="ev-carousel-container">
         <div className="ev-carousel-header">
           <div className="ev-carousel-tag">
-            <span>Versatile Power</span>
+            <span>Luxury Amenities</span>
           </div>
           <h2 className="ev-carousel-title">
-            Future-Ready Comfort
+            Premium Comfort Onboard
           </h2>
+        </div>
+        
+        <div className="ev-carousel-amenities-list">
+          {amenities.map((amenity) => (
+            <div key={amenity.id} className="ev-carousel-amenity-item">
+              <span className="ev-carousel-amenity-icon">✓</span>
+              <span className="ev-carousel-amenity-name">{amenity.name}</span>
+            </div>
+          ))}
         </div>
         
         <div className="ev-carousel-content">

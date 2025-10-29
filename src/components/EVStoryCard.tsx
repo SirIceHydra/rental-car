@@ -23,11 +23,11 @@ const EVStoryCard: React.FC = () => {
       
       <div className="ev-story-card-content">
         <h3 className="ev-story-card-title">
-          Experience Premium Fleet Excellence
+          Luxury Chauffeur Experience
         </h3>
         <div className="ev-story-card-description">
-          <p>Discover our meticulously maintained luxury vehicles</p>
-          <p>designed for the most discerning clients in Johannesburg.</p>
+          <p>Professional chauffeurs in premium VW Kombi vehicles</p>
+          <p>serving Cape Town's most distinguished clients.</p>
         </div>
       </div>
     </div>

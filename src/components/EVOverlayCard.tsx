@@ -2,6 +2,11 @@ import React from 'react'
 import './EVOverlayCard.css'
 
 const EVOverlayCard: React.FC = () => {
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId)
+    element?.scrollIntoView({ behavior: 'smooth' })
+  }
+
   return (
     <div className="ev-overlay-card">
       <div className="ev-overlay-background">
@@ -15,14 +20,17 @@ const EVOverlayCard: React.FC = () => {
       
       <div className="ev-overlay-content">
         <div className="ev-overlay-text">
-          <h3 className="ev-overlay-title">Luxury for Every Occasion</h3>
+          <h3 className="ev-overlay-title">VIP Chauffeur Service</h3>
           <p className="ev-overlay-description">
-            From executive transport to special celebrations, we provide the perfect luxury vehicle for every moment that matters.
+            From airport transfers to winelands tours, our luxury VW Kombi chauffeur service elevates every journey across Cape Town.
           </p>
         </div>
         
-        <button className="ev-overlay-button">
-          <span>Our Story</span>
+        <button 
+          className="ev-overlay-button"
+          onClick={() => scrollToSection('contact')}
+        >
+          <span>Book Experience</span>
         </button>
       </div>
     </div>

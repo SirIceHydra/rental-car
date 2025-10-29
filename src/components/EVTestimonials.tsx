@@ -11,10 +11,10 @@ const EVTestimonials: React.FC = () => {
       <div className="ev-testimonials-container">
         <div className="ev-testimonials-header">
           <div className="ev-testimonials-tag">
-            <span>Premium Service</span>
+            <span>Client Testimonials</span>
           </div>
           <h2 className="ev-testimonials-title">
-            Revolutionizing Luxury Mobility
+            Exceptional Experiences Across Cape Town
           </h2>
         </div>
         

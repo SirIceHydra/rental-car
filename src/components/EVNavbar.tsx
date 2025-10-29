@@ -20,7 +20,7 @@ const EVNavbar: React.FC = () => {
         <div className="ev-navbar-logo" onClick={() => scrollToSection('home')}>
           <img 
             src="/logo.svg" 
-            alt="EliteDrive Logo" 
+            alt="EliteDrive Chauffeur Service Logo" 
             className="ev-logo-img"
           />
         </div>
@@ -28,13 +28,13 @@ const EVNavbar: React.FC = () => {
         {/* Desktop Navigation */}
         <div className="ev-navbar-links">
           <a href="#about" className="ev-nav-link" onClick={(e) => { e.preventDefault(); scrollToSection('about') }}>About</a>
-          <a href="#fleet" className="ev-nav-link" onClick={(e) => { e.preventDefault(); scrollToSection('fleet') }}>Our Fleet</a>
-          <a href="#services" className="ev-nav-link" onClick={(e) => { e.preventDefault(); scrollToSection('services') }}>Services</a>
+          <a href="#services" className="ev-nav-link" onClick={(e) => { e.preventDefault(); scrollToSection('services') }}>Service Tiers</a>
+          <a href="#locations" className="ev-nav-link" onClick={(e) => { e.preventDefault(); scrollToSection('locations') }}>Where We Operate</a>
           <a href="#contact" className="ev-nav-link" onClick={(e) => { e.preventDefault(); scrollToSection('contact') }}>Contact Us</a>
         </div>
         
         <button className="ev-navbar-cta" onClick={() => scrollToSection('contact')}>
-          <span>Book Now</span>
+          <span>Book Your Chauffeur</span>
           <img 
             src="/425792dee1b0ac56cdb06123bdd57d7fd5405a91.svg" 
             alt="Arrow" 
@@ -58,11 +58,11 @@ const EVNavbar: React.FC = () => {
       <div className={`ev-mobile-menu ${isMobileMenuOpen ? 'ev-mobile-menu--open' : ''}`}>
         <div className="ev-mobile-menu-content">
           <a href="#about" className="ev-mobile-link" onClick={(e) => { e.preventDefault(); scrollToSection('about') }}>About</a>
-          <a href="#fleet" className="ev-mobile-link" onClick={(e) => { e.preventDefault(); scrollToSection('fleet') }}>Our Fleet</a>
-          <a href="#services" className="ev-mobile-link" onClick={(e) => { e.preventDefault(); scrollToSection('services') }}>Services</a>
+          <a href="#services" className="ev-mobile-link" onClick={(e) => { e.preventDefault(); scrollToSection('services') }}>Service Tiers</a>
+          <a href="#locations" className="ev-mobile-link" onClick={(e) => { e.preventDefault(); scrollToSection('locations') }}>Where We Operate</a>
           <a href="#contact" className="ev-mobile-link" onClick={(e) => { e.preventDefault(); scrollToSection('contact') }}>Contact Us</a>
           <button className="ev-mobile-cta" onClick={() => scrollToSection('contact')}>
-            <span>Book Now</span>
+            <span>Book Your Chauffeur</span>
             <img 
               src="/425792dee1b0ac56cdb06123bdd57d7fd5405a91.svg" 
               alt="Arrow" 

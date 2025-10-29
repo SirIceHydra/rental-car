@@ -6,8 +6,8 @@ const EVBrandCard: React.FC = () => {
     <div className="ev-brand-card">
       <div className="ev-brand-background">
         <img 
-          src="/9e21059e9db62340d8dad8bc05d76afb5d8b9365.png" 
-          alt="Luxury Brand Background"
+          src="/Vehicle-and-Chauffeur-Hire.jpg" 
+          alt="Luxury Chauffeur and Vehicle"
           className="ev-brand-bg-img"
         />
         <div className="ev-brand-overlay"></div>
@@ -27,7 +27,7 @@ const EVBrandCard: React.FC = () => {
         
         <div className="ev-brand-title">
           <h2>Luxury</h2>
-          <h2>Mobility</h2>
+          <h2>Chauffeur</h2>
         </div>
       </div>
     </div>

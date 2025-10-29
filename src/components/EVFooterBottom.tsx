@@ -5,7 +5,7 @@ const EVFooterBottom: React.FC = () => {
   return (
     <div className="ev-footer-bottom">
       <div className="ev-footer-copyright">
-        <span>© 2024 EliteDrive Luxury Car Rental. All rights reserved.</span>
+        <span>© 2024 EliteDrive Luxury Chauffeur Service. All rights reserved.</span>
       </div>
       
       <div className="ev-footer-legal">

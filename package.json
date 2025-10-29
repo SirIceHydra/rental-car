@@ -1,11 +1,11 @@
 {
-  "name": "luxury-car-rental-johannesburg",
+  "name": "luxury-chauffeur-service-cape-town",
   "private": true,
   "version": "1.0.0",
   "type": "module",
-  "description": "Premium luxury car rental service in Johannesburg, South Africa",
-  "keywords": ["luxury car rental", "Johannesburg", "premium vehicles", "chauffeur service", "South Africa"],
-  "author": "Luxury Car Rental Johannesburg",
+  "description": "Premium luxury VW Kombi chauffeur service in Cape Town, South Africa",
+  "keywords": ["luxury chauffeur", "Cape Town", "VW Kombi", "chauffeur service", "VIP transport", "South Africa"],
+  "author": "EliteDrive Luxury Chauffeur Service",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",

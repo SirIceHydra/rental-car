@@ -11,21 +11,21 @@ interface CounterData {
 const counters: CounterData[] = [
   {
     id: 1,
-    number: '50',
-    unit: '+',
-    description: 'Premium Vehicles in Fleet'
+    number: '24',
+    unit: '/7',
+    description: 'Available Any Time, Every Day'
   },
   {
     id: 2,
-    number: '98',
-    unit: '%',
-    description: 'Customer Satisfaction Rate'
+    number: '500',
+    unit: '+',
+    description: 'VIP Clients Served in Cape Town'
   },
   {
     id: 3,
-    number: '5',
-    unit: 'Years',
-    description: 'Trusted Service Excellence'
+    number: '100',
+    unit: '%',
+    description: 'Professional Chauffeur Certified'
   }
 ]
 

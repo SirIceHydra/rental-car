@@ -2,58 +2,66 @@ import React from 'react'
 import EVProductCard from './EVProductCard'
 import './EVProducts.css'
 
-interface Product {
+interface ServiceTier {
   id: number
-  title: string
+  tierName: string
   description: string
-  originalPrice: string
-  salePrice: string
+  features: string[]
   imageSrc: string
 }
 
-const products: Product[] = [
+const serviceTiers: ServiceTier[] = [
   {
     id: 1,
-    title: 'BMW 7 Series',
-    description: 'Ultimate luxury sedan with executive comfort and cutting-edge technology. Perfect for business meetings and special occasions.',
-    originalPrice: 'R 4,500',
-    salePrice: 'R 3,800',
-    imageSrc: '/bmw-7-series-overview-g70.webp'
-  },
-  {
-    id: 2,
-    title: 'Mercedes-Benz E-Class',
-    description: 'Sophisticated elegance meets advanced technology. Ideal for discerning clients who demand the finest in automotive luxury.',
-    originalPrice: 'R 3,200',
-    salePrice: 'R 2,800',
+    tierName: 'Elite Ride',
+    description: 'A premium point-to-point luxury chauffeur experience in a stylish VW Kombi. Comfortable, discreet, on-time rides wherever you need to be.',
+    features: [
+      'Professional chauffeur',
+      'Luxury seating and finishes',
+      'Complimentary bottled water'
+    ],
     imageSrc: '/2024-mercedes-benz-e-300-aus-81.jpg'
   },
   {
+    id: 2,
+    tierName: 'Concierge Companion',
+    description: 'Your chauffeur stays available throughout the day—suggesting hotspots, guiding your journey, and helping with itinerary planning.',
+    features: [
+      'Dedicated on-call chauffeur',
+      'Local guidance and recommendations',
+      'Premium refreshments onboard'
+    ],
+    imageSrc: '/bmw-7-series-overview-g70.webp'
+  },
+  {
     id: 3,
-    title: 'Range Rover Sport',
-    description: 'Premium SUV combining luxury with capability. Perfect for exploring Johannesburg and surrounding areas in ultimate comfort.',
-    originalPrice: 'R 4,800',
-    salePrice: 'R 4,200',
+    tierName: 'VIP Celebrity Experience',
+    description: 'Chauffeur acts as a private assistant—shopping help, protection, red-carpet-style treatment. Ultimate luxury on the move.',
+    features: [
+      'Personal shopping assistant',
+      'Bodyguard-style presence',
+      'In-vehicle entertainment + luxury amenities'
+    ],
     imageSrc: '/rangeroverpsort.jpg'
   }
 ]
 
 const EVProducts: React.FC = () => {
   return (
-    <section className="ev-products" id="fleet">
+    <section className="ev-products" id="services">
       <div className="ev-products-container">
         <div className="ev-products-header">
           <div className="ev-products-tag">
-            <span>Premium Fleet</span>
+            <span>Service Tiers</span>
           </div>
           <h2 className="ev-products-title">
-            Discover Our Luxury Vehicle Collection
+            Choose Your Luxury Experience
           </h2>
         </div>
         
         <div className="ev-products-grid">
-          {products.map((product) => (
-            <EVProductCard key={product.id} product={product} />
+          {serviceTiers.map((tier) => (
+            <EVProductCard key={tier.id} serviceTier={tier} />
           ))}
         </div>
       </div>
